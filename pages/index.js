@@ -7,7 +7,6 @@ export default function Home() {
       title="Ahmed Abdelaal - Full Stack Software Engineer | Web Developer"
       description="This is the home page."
     >
-      <div>Home Page</div>
     </Container>
   )
 }
