@@ -32,7 +32,7 @@ export default function Container({ children, ...customMeta }) {
         <meta name="twitter:site" content="@shrki416" />
       </Head>
 
-      <main className="max-w-6xl mx-auto px-4 py-10 md:py-20">
+      <main className="max-w-5xl mx-auto px-4 py-10 md:py-20">
         <Navbar />
         <div>{children}</div>
       </main>
