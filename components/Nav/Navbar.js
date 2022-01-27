@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import GithubSVG from "../SVGs/GithubSVG";
 import Link from "next/link";
 import LinkedInSVG from "../SVGs/LinkedInSVG";
-import MobileMenu from './MobileMenu';
+import MobileMenu from "./MobileMenu";
 import NavArrow from "../SVGs/NavArrow";
-import NavItem from './NavItem';
+import NavItem from "./NavItem";
 import ToggleButton from "./ToggleButton";
 import TwitterSVG from "../SVGs/TwitterSVG";
 import data from "../../data";
@@ -27,7 +27,7 @@ export default function Navbar() {
         <header className="flex flex-col">
           <Link href="/">
             <a>
-              <h1 className="font-semibold md:text-xl">{data.name}</h1>
+              <h1 className="font-bold md:text-2xl lg:text-4xl">{data.name}</h1>
               <p className="font-light text-xs md:text-base text-grey-500">
                 {data.designation}
               </p>
