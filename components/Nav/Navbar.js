@@ -28,7 +28,7 @@ export default function Navbar() {
           <Link href="/">
             <a>
               <h1 className="font-semibold md:text-xl">{data.name}</h1>
-              <p className="text-base font-light text-grey-500">
+              <p className="font-light text-xs md:text-base text-grey-500">
                 {data.designation}
               </p>
             </a>

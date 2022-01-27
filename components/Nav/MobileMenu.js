@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function MobileMenu() {
   return (
-    <div className="space-x-8 block md:hidden mt-4">
+    <div className="space-x-8 block md:hidden mt-4 text-center">
       <Link href="/about">
         <a className="text-base font-normal">About</a>
       </Link>
