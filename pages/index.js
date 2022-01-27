@@ -1,3 +1,4 @@
+import About from '../components/About'
 import Container from '../components/Container'
 import data from '../data'
 
@@ -7,6 +8,7 @@ export default function Home() {
       title="Ahmed Abdelaal - Full Stack Software Engineer | Web Developer"
       description="This is the home page."
     >
+      <About />
     </Container>
   )
 }
