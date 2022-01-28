@@ -27,8 +27,8 @@ export default function Navbar() {
         <header className="flex flex-col">
           <Link href="/">
             <a>
-              <h1 className="font-bold md:text-2xl lg:text-4xl">{data.name}</h1>
-              <p className="font-light text-xs md:text-base text-grey-500">
+              <h1 className="font-bold md:text-2xl lg:text-4xl text-gray-800 dark:text-gray-200">{data.name}</h1>
+              <p className="font-light text-xs md:text-base text-gray-600 dark:text-gray-400">
                 {data.designation}
               </p>
             </a>
