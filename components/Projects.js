@@ -1,4 +1,5 @@
-import data from '../data';
+import Image from "next/image";
+import data from "../data";
 
 export default function Projects() {
   return (
@@ -8,9 +9,8 @@ export default function Projects() {
           Projects
         </h1>
       </div>
-      {/* Grid starts here */}
       <div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {data.projects.map((proj, idx) => (
             <ProjectCard
               key={idx}
@@ -31,9 +31,10 @@ const ProjectCard = ({ title, link, imgUrl, number }) => {
     <a href={link} className="w-full block shadow-2xl">
       <div className="relative overflow-hidden">
         <div className="h-72 object-cover">
-          <img
+          <Image
             src={imgUrl}
-            alt="portfolio"
+            alt="avatar"
+            layout="fill"
             className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
           />
         </div>
@@ -47,4 +48,3 @@ const ProjectCard = ({ title, link, imgUrl, number }) => {
     </a>
   );
 };
-
