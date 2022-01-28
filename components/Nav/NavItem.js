@@ -10,7 +10,9 @@ function NavItem({ href, text }) {
     <Link href={href}>
       <a
         className={`text-base ${
-          isActive ? "text-gray-500 font-bold" : "text-gray-700"
+          isActive
+            ? "text-gray-500 dark:text-gray-200 font-bold"
+            : "text-gray-700 dark:text-gray-400"
         }`}
       >
         {text} {isActive && <NavArrow />}
