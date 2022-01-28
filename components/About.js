@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section className="max-w-5xl mx-auto">
       <div className="flex justify-between items-center">
-        <div className="text-5xl md:text-7xl lg:text-9xl font-bold py-10 md:py-20 text-center md:text-left">
+        <div className="text-5xl md:text-7xl lg:text-9xl font-bold py-10 md:py-20 text-center md:text-left text-gray-800 dark:text-gray-300">
           About Me.
         </div>
         <div className="hidden md:block">
@@ -38,45 +38,51 @@ export default function About() {
         </div>
       </div>
 
-      <div className="text-container max-w-6xl mx-auto md:pt-20 pb-10">
-        <p className="leading-loose text-2xl md:text-4xl mx-4">
+      <div className="text-container mx-auto md:pt-20 pb-10 text-gray-700 dark:text-gray-400">
+        <p className="leading-loose text-2xl md:text-4xl">
           {data.about.title}
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
         <div className="inline-flex flex-col">
+
           <div>
-            <h1 className="text-xl font-bold">Contact</h1>
-            <p className="text-lg text-gray-500 mt-4">
-              I&apos;d love to connect. For any enquiry, shoot an{" "}
+            <h1 className="text-xl font-bold text-gray-800 dark:text-gray-300">
+              Contact
+            </h1>
+            <p className="text-lg text-gray-700 dark:text-gray-500 mt-4">
+              I&apos;d love to connect. For any enquiry, shoot me an{" "}
               <a
                 href={`mailto:${data.email}`}
-                className="text-grey-800 border-b-2 border-l-gray-800 font-bold"
+                className="text-blue-600 border-b-2 dark:border-blue-600 border-l-blue-600 font-bold"
               >
                 email
               </a>{" "}
               and I&apos;ll get back to you, I promise!
             </p>
           </div>
+
           <div className="mt-8">
-            <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
+            <h1 className="text-xl font-semibold text-gray-800 dark:text-gray-300">
               Job Opportunities
             </h1>
-            <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
+            <p className="text-lg text-gray-700 mt-4 dark:text-gray-500">
               I&apos;m looking for a job currently, if you see me as a good fit,
               check my{" "}
               <a
                 href={data.resumeUrl}
                 target="__blank"
-                className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+                className="text-green-600 border-b-2 border-green-600 dark:border-green-600 font-bold dark:text-green-600"
               >
                 CV
               </a>{" "}
               and I&apos;d love to work for you.
             </p>
           </div>
-          <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200">
+
+        <div className='mt-8'>
+          <h1 className="text-xl font-semibold text-gray-800 dark:text-gray-300">
             Social Links
           </h1>
           <div className="mt-4 ml-4">
@@ -85,8 +91,8 @@ export default function About() {
                 href={data.socialLinks.github}
                 className="flex flex-row items-center space-x-4 group"
               >
-                <span className="my-4">&rarr;</span>
-                <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
+                <span className="my-4 dark:text-red-500">&rarr;</span>
+                <p className="text-lg text-gray-700 font-mono relative overflow-hidden dark:text-gray-500">
                   <span className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></span>
                   GitHub
                 </p>
@@ -98,8 +104,8 @@ export default function About() {
                 href={data.socialLinks.linkedin}
                 className="flex flex-row items-center space-x-4 group"
               >
-                <span className="my-4">&rarr;</span>
-                <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
+                <span className="my-4 dark:text-red-500">&rarr;</span>
+                <p className="text-lg text-gray-700 font-mono relative overflow-hidden dark:text-gray-500">
                   <span className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></span>
                   LinkedIn
                 </p>
@@ -111,8 +117,8 @@ export default function About() {
                 href={data.socialLinks.twitter}
                 className="flex flex-row items-center space-x-4 group"
               >
-                <span className="my-4">&rarr;</span>
-                <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
+                <span className="my-4 dark:text-red-500">&rarr;</span>
+                <p className="text-lg text-gray-700 font-mono relative overflow-hidden dark:text-gray-500">
                   <span className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></span>
                   Twitter
                 </p>
@@ -120,11 +126,14 @@ export default function About() {
             </div>
           </div>
         </div>
+
+
+        </div>
         <div className="col-span-1 md:col-span-2">
           {data.about.description?.map((desc, idx) => (
             <p
               key={idx}
-              className="text-xl text-gray-700 mb-4 dark:text-gray-300 "
+              className="text-xl text-gray-800 mb-4 dark:text-gray-400"
             >
               {desc}
             </p>
