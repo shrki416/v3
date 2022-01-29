@@ -165,7 +165,7 @@ export default function About() {
             />
 
             {/* <img src="/github.svg" className="h-12 w-12 mx-4 my-4" /> */}
-            <div className="h-12 w-12 mx-4 my-4 fill-current text-gray-900 dark:text-gray-300">
+            <div className="h-12 w-12 mx-4 my-4 fill-current text-gray-900 dark:text-gray-400">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                 <g>
                   <path
