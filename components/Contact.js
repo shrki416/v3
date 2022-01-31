@@ -1,14 +1,19 @@
+import Form from "../components/Form";
 import GithubSVG from "../components/SVGs/GithubSVG";
+import Head from "next/head";
 import LinkedInSVG from "../components/SVGs/LinkedInSVG";
 import TwitterSVG from "../components/SVGs/TwitterSVG";
 import data from "../data";
 
-export default function Contact({ data }) {
-  const { allSocials, allGenerals } = data;
-  const { phone, email, address } = allGenerals[0];
+export default function Contact({ general, social }) {
+  const { phone, email, address } = general;
 
   return (
     <section>
+      <Head>
+        <title>Let&apos;s work together!</title>
+      </Head>
+
       <div className="antialiased">
         <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
           Contact
@@ -68,46 +73,18 @@ export default function Contact({ data }) {
               </div>
             </div>
             <div className="social-icons flex flex-row space-x-8">
-              <a href={allSocials[2].url} className="social-icon">
+              <a href={social[2].url} className="social-icon">
                 <GithubSVG />
               </a>
-              <a href={allSocials[0].url} className="social-icon">
+              <a href={social[0].url} className="social-icon">
                 <TwitterSVG />
               </a>
-              <a href={allSocials[1].url} className="social-icon">
+              <a href={social[1].url} className="social-icon">
                 <LinkedInSVG />
               </a>
             </div>
           </div>
-          <form className="form rounded-lg bg-white p-4 flex flex-col">
-            <label htmlFor="name" className="text-sm text-gray-600 mx-4">
-              {" "}
-              Your Name
-            </label>
-            <input type="text" className="input" name="name" />
-            <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">
-              Email
-            </label>
-            <input type="text" className="input" name="email" />
-            <label
-              htmlFor="message"
-              className="text-sm text-gray-600 mx-4 mt-4"
-            >
-              Message
-            </label>
-            <textarea
-              rows="4"
-              type="text"
-              className="input"
-              name="message"
-            ></textarea>
-            <button
-              type="submit"
-              className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
-            >
-              Send Message
-            </button>
-          </form>
+          <Form />
         </div>
       </div>
     </section>
