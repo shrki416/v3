@@ -22,23 +22,23 @@ export async function getStaticProps() {
 
   const headers = {
     Authorization: `Bearer ${process.env.DATOCMS_API_TOKEN}`,
-  }
+  };
 
   const client = new GraphQLClient(endpoint, { headers });
-
   const data = await client.request(query);
 
   return {
     props: {
-      data,
+      general: data.allGenerals[0],
+      social: data.allSocials,
     },
   };
 }
 
-export default function contact({ data }) {
+export default function contact({ general, social }) {
   return (
     <Container>
-      <Contact data={data} />
+      <Contact general={general} social={social} />
     </Container>
   );
 }
