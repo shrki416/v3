@@ -42,7 +42,6 @@ export async function getStaticProps() {
   const client = new GraphQLClient(endpoint, { headers });
   const data = await client.request(query);
 
-
   return {
     props: {
       general: data.allGenerals[0],

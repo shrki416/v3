@@ -2,6 +2,8 @@ import Image from "next/image";
 import data from "../data";
 
 export default function About({ general, techStacks }) {
+  console.log(general);
+  console.log(techStacks);
   return (
     <section className="max-w-5xl mx-auto">
       <div className="flex justify-between items-center">
