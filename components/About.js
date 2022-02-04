@@ -45,25 +45,25 @@ export default function About({ general, techStacks }) {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
         <div className="inline-flex flex-col">
           <div>
-            <h1 className="text-xl font-bold text-gray-800 dark:text-gray-300">
+            <h2 className="text-xl font-bold text-gray-800 dark:text-blue-600">
               Contact
-            </h1>
+            </h2>
             <p className="text-lg text-gray-700 dark:text-gray-500 mt-4">
               I&apos;d love to connect. For any enquiry, shoot me an{" "}
               <a
                 href={`mailto:${general.email}`}
                 className="text-blue-600 border-b-2 border-blue-600 border-l-blue-600 font-bold"
               >
-                email
+                EMAIL
               </a>{" "}
               and I&apos;ll get back to you, I promise!
             </p>
           </div>
 
           <div className="mt-8">
-            <h1 className="text-xl font-semibold text-gray-800 dark:text-gray-300">
+            <h2 className="text-xl font-semibold text-gray-800 dark:text-green-600">
               Job Opportunities
-            </h1>
+            </h2>
             <p className="text-lg text-gray-700 mt-4 dark:text-gray-500">
               I&apos;m looking for a job currently, if you see me as a good fit,
               check my{" "}
@@ -79,9 +79,9 @@ export default function About({ general, techStacks }) {
           </div>
 
           <section className="mt-8">
-            <h1 className="text-xl font-semibold text-gray-800 dark:text-gray-300">
+            <h2 className="text-xl font-semibold text-gray-800 dark:text-red-500">
               Social Links
-            </h1>
+            </h2>
             <div className="mt-4 ml-4">
               <div className="flex flex-row justify-start items-center">
                 <a
