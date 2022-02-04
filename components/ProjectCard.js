@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProjectCard({ title, link, imgUrl, number }) {
   return (
-    <a href={link} className="w-full block shadow-2xl">
+    <a href={link} className="w-full block shadow-2xl border-red-500 border-2">
       <div className="relative overflow-hidden">
         <div className="h-72 object-cover">
           <Image
