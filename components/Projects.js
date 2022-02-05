@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from "next/image";
 import ProjectCard from "./ProjectCard";
 import data from "../data";
@@ -5,6 +6,9 @@ import data from "../data";
 export default function Projects({ data }) {
   return (
     <section>
+      <Head>
+        <title>Projects 🙂</title>
+      </Head>
       <div>
         <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
           Projects
