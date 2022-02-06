@@ -1,7 +1,6 @@
-import Head from 'next/head';
+import Head from "next/head";
 import Image from "next/image";
 import ProjectCard from "./ProjectCard";
-import data from "../data";
 
 export default function Projects({ data }) {
   return (
@@ -9,11 +8,11 @@ export default function Projects({ data }) {
       <Head>
         <title>Projects 🙂</title>
       </Head>
-      <div>
-        <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          Projects
-        </h1>
-      </div>
+
+      <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+        Projects
+      </h1>
+
       <div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {data.map((project, index) => (
