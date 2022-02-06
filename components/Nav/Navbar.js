@@ -8,7 +8,6 @@ import NavArrow from "../SVGs/NavArrow";
 import NavItem from "./NavItem";
 import ToggleButton from "./ToggleButton";
 import TwitterSVG from "../SVGs/TwitterSVG";
-import data from "../../data";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
 
@@ -28,38 +27,38 @@ export default function Navbar() {
           <Link href="/">
             <a>
               <h1 className="font-bold md:text-2xl lg:text-4xl text-gray-800 dark:text-gray-200 hover:text-red-500">
-                {data.name}
+                Ahmed Abdelaal
               </h1>
               <p className="font-light text-xs md:text-base text-gray-600 dark:text-gray-400">
-                {data.designation}
+                Full-Stack Developer
               </p>
             </a>
           </Link>
         </header>
 
         <div className="space-x-8 md:block hidden">
-          <NavItem href="/about" text="About" />
+          <NavItem href="/" text="About" />
           <NavItem href="/projects" text="Projects" />
           <NavItem href="/contact" text="Contact" />
         </div>
 
         <div className="space-x-4 flex flex-row items-center">
           <a
-            href={data.socialLinks.github}
+            href="https://github.com/shrki416"
             className="text-base font-normal text-gray-500"
           >
             <GithubSVG />
           </a>
 
           <a
-            href={data.socialLinks.twitter}
+            href="https://twitter.com/shrki416"
             className="text-base font-normal text-gray-500"
           >
             <TwitterSVG />
           </a>
 
           <a
-            href={data.socialLinks.linkedin}
+            href="https://www.linkedin.com/in/aa-dev/"
             className="text-base font-normal text-gray-500"
           >
             <LinkedInSVG />
