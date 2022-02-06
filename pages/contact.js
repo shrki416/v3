@@ -1,7 +1,7 @@
 import { GraphQLClient, gql, request } from "graphql-request";
 
 import Contact from "../components/Contact";
-import Container from "../components/Container";
+import Layout from "../components/Layout";
 
 const query = gql`
   query {
@@ -18,13 +18,13 @@ const query = gql`
 `;
 
 export async function getStaticProps() {
-  const endpoint = `https://graphql.datocms.com/`;
+  const DATO_CMS_ENDPOINT = process.env.DATO_CMS_ENDPOINT;
 
   const headers = {
     Authorization: `Bearer ${process.env.DATOCMS_API_TOKEN}`,
   };
 
-  const client = new GraphQLClient(endpoint, { headers });
+  const client = new GraphQLClient(DATO_CMS_ENDPOINT, { headers });
   const data = await client.request(query);
 
   return {
@@ -37,8 +37,8 @@ export async function getStaticProps() {
 
 export default function contact({ general, social }) {
   return (
-    <Container>
+    <Layout>
       <Contact general={general} social={social} />
-    </Container>
+    </Layout>
   );
 }
