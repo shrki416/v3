@@ -35,3 +35,7 @@
 .input {
   @apply font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500;
 }
+
+.contact {
+  @apply flex flex-row items-center space-x-6 rounded-md border border-[#3c6382] hover:border hover:border-blue-500 p-4;
+}
