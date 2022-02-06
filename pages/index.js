@@ -1,25 +1,19 @@
 import { GraphQLClient, gql, request } from "graphql-request";
 
-import About from '../components/About'
-import Container from '../components/Container'
-import data from '../data'
+import About from "../components/About";
+import Layout from "../components/Layout";
 
 const query = gql`
   query {
-    allAbouts {
-      title
-      text
-      id
-    }
     allGenerals {
       phone
-      name
       id
       githubUsername
       email
-      designation
       avatarUrl
       address
+      resumeUrl
+      title
     }
     allTechStacks {
       image {
@@ -30,39 +24,49 @@ const query = gql`
         id
       }
     }
+    allSocials {
+      url
+    }
+    allAbouts {
+      aboutText {
+        value
+      }
+    }
   }
 `;
 
-
 export async function getServerSideProps() {
-  const endpoint = `https://graphql.datocms.com/`;
+  const DATO_CMS_ENDPOINT = process.env.DATO_CMS_ENDPOINT;
 
   const headers = {
     Authorization: `Bearer ${process.env.DATOCMS_API_TOKEN}`,
   };
 
-  const client = new GraphQLClient(endpoint, { headers });
+  const client = new GraphQLClient(DATO_CMS_ENDPOINT, { headers });
   const data = await client.request(query);
 
   return {
     props: {
       general: data.allGenerals[0],
       techStacks: data.allTechStacks,
+      socials: data.allSocials,
+      about: data.allAbouts[0],
     },
   };
 }
 
-export default function Home({ general, techStacks }) {
+export default function Home({ general, techStacks, socials, about }) {
   return (
-    <Container
+    <Layout
       title="Ahmed Abdelaal - Full Stack Software Engineer | Web Developer"
       description="This is the home page."
     >
-      <About general={general} techStacks={techStacks} />
-    </Container>
+      <About
+        general={general}
+        techStacks={techStacks}
+        socials={socials}
+        about={about}
+      />
+    </Layout>
   );
 }
-
-
-
-
