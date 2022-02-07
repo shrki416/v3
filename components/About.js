@@ -116,21 +116,21 @@ export default function About({ general, techStacks, socials }) {
         <div className="col-span-1 md:col-span-2">
           <div className="text-xl text-gray-800 mb-4 dark:text-gray-400">
             <p className="mb-5">
-              I&apos;ve been developing Full Stack application for the past 2
+              I&apos;ve been developing Full Stack applications for the past 2
               years. I am currently a support-coach @ Software Development
               Mastermind.
             </p>
             <p className="mb-5">
-              I&apos;ve been coding in React on the frontend and NodeJS on the
+              I&apos;ve been coding using React on the frontend and NodeJS on the
               backend. I prefer PostgreSQL as a db, but have used others such as
               MongoDB. When I&apos;m not coding or working on new features, I
               spend my time improving code quality by refactoring and
-              introducing design patterns I learned about.
+              introducing design patterns I learn about.
             </p>
             <p className="mb-5">
-              I have many hobbies; the ones I care about the most are traveling,
+              I have many hobbies; the one I am most passionate about is traveling,
               I LOVE to travel, learn about different cultures and see other
-              places. I enjoy woodworking, I&apos;ve made a few small things such as
+              places. I also enjoy woodworking, I&apos;ve made a few things including
               a coffee table and a small seating bench.
             </p>
           </div>
