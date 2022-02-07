@@ -115,7 +115,6 @@ export default function About({ general, techStacks, socials }) {
         </div>
         <div className="col-span-1 md:col-span-2">
           <div className="text-xl text-gray-800 mb-4 dark:text-gray-400">
-
             <p className="mb-5">
               I&apos;ve been developing Full Stack applications for the past 2
               years. I am currently a support-coach @ Software Development
