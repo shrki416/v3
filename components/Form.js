@@ -1,8 +1,14 @@
 export default function Form() {
   return (
-    <form className="form rounded-lg bg-white p-4 flex flex-col">
+    <form
+      className="form rounded-lg bg-white p-4 flex flex-col"
+      name="contact"
+      action="/success"
+      method="POST"
+      data-netlify="true"
+    >
+      <input type="hidden" name="form-name" value="contact" />
       <label htmlFor="name" className="text-sm text-gray-600 mx-4">
-        {" "}
         Your Name
       </label>
       <input type="text" className="input" name="name" />
@@ -27,4 +33,4 @@ export default function Form() {
       </button>
     </form>
   );
-};
+}
