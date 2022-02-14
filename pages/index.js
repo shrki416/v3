@@ -59,7 +59,7 @@ export default function Home({ general, techStacks, socials, about }) {
   return (
     <Layout
       title="Ahmed Abdelaal - Full Stack Software Engineer | Web Developer"
-      description="This is the home page."
+      description= "I've been developing websites and teaching web development for the past 3 years.  Get in touch with me to know more."
     >
       <About
         general={general}
