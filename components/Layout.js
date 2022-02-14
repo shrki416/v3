@@ -27,7 +27,7 @@ export default function Layout({ children, ...customMeta }) {
         <meta property="og:description" content={meta.description} />
         <meta property="og:image" content={meta.image} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:publish_date" content={new Date().toISOString()} name='publish_date' />
+        <meta property="og:publish_date" content={new Date()} name='publish_date' />
         <meta name="author" content={meta.author} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={meta.title} />
