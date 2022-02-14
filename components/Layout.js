@@ -6,6 +6,7 @@ export default function Layout({ children, ...customMeta }) {
   const router = useRouter();
 
   const meta = {
+    author: "Ahmed Abdelaal",
     title:
       "Ahmed Abdelaal - Full Stack Software Engineer | Node JS, React JS, and PostgreSQL",
     description: `I've been developing websites and teaching web development for the past 3 years.  Get in touch with me to know more.`,
@@ -26,6 +27,8 @@ export default function Layout({ children, ...customMeta }) {
         <meta property="og:description" content={meta.description} />
         <meta property="og:image" content={meta.image} />
         <meta property="og:type" content={meta.type} />
+        <meta property="og:publish_date" content={new Date().toISOString()} name='publish_date' />
+        <meta name="author" content={meta.author} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
