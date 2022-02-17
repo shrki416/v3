@@ -121,17 +121,17 @@ export default function About({ general, techStacks, socials }) {
               Mastermind.
             </p>
             <p className="mb-5">
-              I&apos;ve been coding using React on the frontend and NodeJS on the
-              backend. I prefer PostgreSQL as a db, but have used others such as
-              MongoDB. When I&apos;m not coding or working on new features, I
-              spend my time improving code quality by refactoring and
-              introducing design patterns I learn about.
+              I&apos;ve been coding using React on the frontend and NodeJS on
+              the backend. I prefer PostgreSQL as a db, but have used others
+              such as MongoDB. When I&apos;m not coding or working on new
+              features, I spend my time improving code quality by refactoring
+              and introducing design patterns I learn about.
             </p>
             <p className="mb-5">
-              I have many hobbies; the one I am most passionate about is traveling,
-              I LOVE to travel, learn about different cultures and see other
-              places. I also enjoy woodworking, I&apos;ve made a few things including
-              a coffee table and a small seating bench.
+              I have many hobbies; the one I am most passionate about is
+              traveling, I LOVE to travel 🌎, learn about different cultures and
+              see other places. I also enjoy woodworking 🪵, I&apos;ve made a few
+              things including a coffee table and a small seating bench.
             </p>
           </div>
           <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
