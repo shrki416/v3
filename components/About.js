@@ -117,8 +117,7 @@ export default function About({ general, techStacks, socials }) {
           <div className="text-xl text-gray-800 mb-4 dark:text-gray-400">
             <p className="mb-5">
               I&apos;ve been developing Full Stack applications for the past 2
-              years. I am currently a support-coach @ Software Development
-              Mastermind.
+              years. I am currently a Frontend Developer at iPostal1.
             </p>
             <p className="mb-5">
               I&apos;ve been coding using React on the frontend and NodeJS on
@@ -130,8 +129,8 @@ export default function About({ general, techStacks, socials }) {
             <p className="mb-5">
               I have many hobbies; the one I am most passionate about is
               traveling, I LOVE to travel 🌎, learn about different cultures and
-              see other places. I also enjoy woodworking 🪵, I&apos;ve made a few
-              things including a coffee table and a small seating bench.
+              see other places. I also enjoy woodworking 🪵, I&apos;ve made a
+              few things including a coffee table and a small seating bench.
             </p>
           </div>
           <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
